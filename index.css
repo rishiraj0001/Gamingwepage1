@@ -1,0 +1,247 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header Container for Flex Alignment */
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    background-color: #222;
+}
+
+/* Logo Styling */
+.logo-name {
+    display: flex;
+    align-items: center;
+}
+
+.logo-text {
+    font-family: 'Pacifico', cursive;
+    font-size: 48px;  /* Increased logo size */
+    color: #FF5722;  /* Bright orange for contrast */
+    font-weight: bold;
+}
+
+/* Menu Styling */
+ul.header {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+ul.header li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: Arial, sans-serif;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+ul.header li a:hover {
+    background-color: #FF5722;
+    color: black;
+    border-radius: 5px;
+}
+
+/* Game Section Styling */
+.games {
+    padding: 40px;
+    background-color: #ECEFF1; /* Light background for contrast */
+}
+
+.games h2 {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.picture {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+.game {
+    text-align: center;
+}
+
+.game h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #37474F;  /* Darker color for titles */
+}
+
+.game img {
+    width: 400px;  /* Increased image size */
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.game img:hover {
+    transform: scale(1.05);  /* Slight zoom effect on hover */
+}
+
+.game p {
+    font-family: Arial, sans-serif;
+    margin: 10px 0;
+    color: #555;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #FF5722;  /* Bright color for buttons */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #D84315;
+}
+
+/* Consultation Section */
+.consultation {
+    padding: 40px;
+    background-color: #FF7043;  /* Warm contrasting background */
+    text-align: center;
+}
+
+.consultation h2 {
+    font-size: 26px;
+    color: white;  /* White for contrast on dark background */
+}
+
+.consultation p {
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.email-form input {
+    padding: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+    width: 500px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+}
+
+.email-form button {
+    padding: 10px 20px;
+    background-color: #37474F;  /* Dark contrasting button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.email-form button:hover {
+    background-color: #263238;
+}
+
+/* Game Content Section */
+.game-content {
+    padding: 50px;
+    background-color: #CFD8DC; /* Light contrasting section */
+    text-align: center;
+    border-top: 5px solid #FF5722;
+    border-bottom: 5px solid #FF5722;
+}
+
+.game-content h2 {
+    font-size: 32px;
+    color: #37474F;
+    margin-bottom: 20px;
+}
+
+.game-content p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 10px;
+    max-width: 800px;
+    line-height: 1.6;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.game-content p:hover {
+    color: #FF5722; /* Text hover effect for interactivity */
+    transition: color 0.3s ease;
+}
+
+/* About Section */
+.about {
+    padding: 60px;
+    background-color: #FAFAFA; /* Light, clean background */
+    text-align: center;
+    position: relative;
+    border: 2px solid #ECEFF1;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 1000px;
+    margin: 40px auto;
+}
+
+.about h2 {
+    font-size: 34px;
+    color: #333;
+    margin-bottom: 20px;
+    font-family: 'Georgia', serif;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+}
+
+.about p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 20px;
+    max-width: 800px;
+    line-height: 1.8;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about:hover {
+    background-color: #f0f0f0;
+    transition: background-color 0.4s ease;
+}
+
+/* Footer Styling */
+.footer {
+    padding: 40px;
+    background-color: #263238;  /* Dark footer for contrast */
+    color: white;
+    text-align: center;
+}
+
+.footer h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #FF5722;  /* Bright color for footer heading */
+}
+
+.footer p {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.footer-address, .footer-phone {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #B0BEC5;  /* Lighter text for details */
+}
